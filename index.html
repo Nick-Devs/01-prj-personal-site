@@ -4,40 +4,66 @@
   <meta charset="UTF-8">
   <title>My Personal Site</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Google Fonts CDN for Lora font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header section with a portrait -->
+  <!-- Top dark blue stripe for contrast -->
+  <div class="stripe-top"></div>
+  <!-- Header section with a portrait and navigation buttons -->
   <header>
-    <h1>My Portfolio</h1>
-    <img src="portrait.jpg" alt="My Portrait" class="portrait">
+    <h1>Insert Super Creative Name Here</h1>
+    <!-- To be replaced with actual picture at some point -->
+    <i class="fa-solid fa-face-laugh-beam header-icon"></i>
+    <!-- Navigation buttons to jump to sections -->
+    <nav>
+      <!-- Very unncessary considering how small the page but could be useful in the future for when it gets longer -->
+      <a href="#about" class="nav-btn">About Me</a>
+      <a href="#skills" class="nav-btn">Skills</a>
+      <a href="#contact" class="nav-btn">Contact</a>
+    </nav>
   </header>
 
   <!-- About Me section -->
   <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I am a software engineer with a passion for building web applications. I love coding and learning new technologies.</p>
+    <div class="about-container">
+      <!-- Cool Gears Icon because engineering-->
+      <i class="fa-solid fa-gears about-icon"></i>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I am a computer science student with a strong interest in both cybersecurity and artificial intelligence. My passion lies in exploring the intersection of these fields understanding how intelligent systems can be designed to solve complex problems while ensuring they remain secure and trustworthy. Through my academic studies and hands-on projects, I have gained experience working with data, developing algorithms, and analyzing system vulnerabilities. I am motivated by the challenge of tackling real world problems, whether that means building robust machine learning models, strengthening system defenses, or researching emerging technologies. Looking ahead, I aim to continue expanding my technical expertise and contribute to innovative solutions that make technology smarter, safer, and more reliable.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Skills section -->
   <section id="skills">
     <h2>Skills</h2>
+    <!-- Each skill is in its own rounded box and all are in a row -->
     <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
+      <li>C</li>
+      <li>C++</li>
       <li>Python</li>
-      <li>React</li>
+      <li>Pandas</li>
+      <li>TensorFlow</li>
+      <li>SQL</li>
+      <li>PyTorch</li>
+      <li>SKLearn</li>
+      <li>Bash</li>
+
     </ul>
   </section>
 
-  <!-- Projects section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="project1.html">Project 1</a> - A web application that does XYZ.</li>
-      <li><a href="project2.html">Project 2</a> - A mobile app that helps with ABC.</li>
-      <li><a href="project3.html">Project 3</a> - A tool for managing tasks.</li>
-    </ul>
+  <!-- Contact Info section at the bottom -->
+  <section id="contact">
+    <h2>Contact Info</h2>
+      <!-- Will update with actual contact details when this site is more fleshed out -->
+    <p>Email: email@example.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
   </section>
+  <!-- Bottom dark blue stripe for contrast -->
+  <div class="stripe-bottom"></div>
 </body>
 </html>

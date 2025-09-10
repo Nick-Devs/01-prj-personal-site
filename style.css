@@ -1,21 +1,23 @@
 /* Add you CSS here */
-body, h1, h2, p {
+body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
+  text-align: center; /* Center all text */
 }
 
 /* Set a background color and font for the body */
 body {
-  background-color: #f4f4f4; /* Light gray background */
-  font-family: Arial, sans-serif; /* Use a simple sans-serif font */
+  background-color: #e6f0fa; /* Very light blue background */
+  font-family: 'Lora', serif; /* Use the Lora font for all text */
+  color: #111; /* Set default text color to black */
 }
 
 /* Style for the header */
 header {
   text-align: center; /* Center the text in the header */
   padding: 20px; /* Add some padding around the header */
-  background-color: #333; /* Dark background for the header */
-  color: white; /* White text color */
+  background-color: #64b5f6; /* Softer blue */
+  color: #111; /* Black text color for header */
 }
 
 /* Style for the portrait image */
@@ -23,25 +25,158 @@ header img {
   border-radius: 50%; /* Make the image circular */
   width: 150px; /* Set a fixed width for the image */
   height: 150px; /* Set a fixed height for the image */
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+/* Style for the Font Awesome icon in the header */
+.header-icon {
+  font-size: 150px; /* Make the icon large like the previous image */
+  color: #1976d2; /* Blue color for the icon */
+  margin: 20px 0; /* Space above and below the icon */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Style for sections */
 section {
-  margin: 20px; /* Add margin around each section */
+  margin: 20px auto; /* Center the section horizontally */
   padding: 15px; /* Add padding inside each section */
-  background-color: white; /* White background for sections */
-  border: 1px solid #ccc; /* Light gray border */
+  width: 80%; /* Make sections narrower and centered */
+  background-color: #bbdefb; /* Light blue for middle section */
+  border: 1px solid #90caf9; /* Light blue border */
   border-radius: 5px; /* Slightly rounded corners */
+  color: #111; /* Black text color for all sections */
+}
+
+/* Specific styles for different sections */
+#about {
+  background-color: #90caf9; /* Softer medium blue for About section */
+  color: #111; /* Black text color for About section */
+  border: none;
+  display: flex; /* Use flexbox to allow image and text side by side */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  gap: 30px; /* Space between image and text */
+  width: 80%; /* Keep section width consistent */
+  margin: 20px auto; /* Center the section horizontally */
+  padding: 20px; /* Add padding inside the section */
+}
+
+.about-container {
+  display: flex; /* Arrange image and text in a row */
+  align-items: center; /* Vertically center items */
+  gap: 30px; /* Space between image and text */
+  width: 100%;
+  justify-content: center;
+}
+
+.about-img {
+  width: 120px; /* Set a fixed width for the image */
+  height: 120px; /* Set a fixed height for the image */
+  border-radius: 10px; /* Slightly rounded corners */
+  object-fit: cover; /* Make sure the image covers the box */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Subtle shadow */
+}
+
+.about-text {
+  text-align: left; /* Only About Me text is left aligned */
+  max-width: 650px; /* Make the text box wider for more space */
+  line-height: 1.8; /* More space between lines for easier reading */
+  padding: 10px 0; /* Add some vertical padding */
+}
+
+/* Style for the Font Awesome icon in About Me section */
+.about-icon {
+  font-size: 120px; /* Make the icon large */
+  color: #1976d2; /* Blue color for the icon */
+  margin-right: 20px; /* Space between icon and text */
+}
+
+@media (max-width: 600px) {
+  #about, .about-container {
+    flex-direction: column; /* Stack image and text on small screens */
+    align-items: center;
+    text-align: center;
+  }
+  .about-text {
+    /* Removed text-align: center so About Me text is always left aligned */
+    max-width: 100%;
+  }
+}
+
+#skills {
+  background-color: #bbdefb; /* Light blue for Skills section */
+  color: #111; /* Black text color for Skills section */
+  border: none;
+  width: 100vw; /* Make the skills section full width */
+  margin-left: calc(-50vw + 50%); /* Stretch section to the left edge */
+  margin-right: calc(-50vw + 50%); /* Stretch section to the right edge */
+  border-radius: 0; /* Remove rounded corners for full-width effect */
+  padding-top: 25px; /* Extra padding for better look */
+  padding-bottom: 25px;
 }
 
 /* Style for section headings */
 h2 {
-  color: #333; /* Dark text color for headings */
+  color: #111; /* Black text for headings */
   margin-bottom: 10px; /* Space below the heading */
 }
 
-/* Style for paragraphs */
-p {
+/* Style for paragraphs and list items */
+p, li {
   line-height: 1.6; /* Increase line height for readability */
-  color: #666; /* Gray text color for paragraphs */
+  color: #111; /* Black text for paragraphs and list items */
+}
+
+/* Style for lists */
+ul {
+  list-style: none; /* Remove bullet points for a cleaner look */
+  padding-left: 0;
+}
+
+#skills ul {
+  display: flex; /* Arrange skills in a row */
+  justify-content: center; /* Center the row */
+  gap: 15px; /* Space between skill boxes */
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+#skills li {
+  background-color: #e3f2fd; /* Lightest blue for skill boxes */
+  color: #111; /* Black text for skill boxes */
+  padding: 10px 20px; /* Padding inside each box */
+  border-radius: 20px; /* Rounded edges */
+  border: 1px solid #90caf9; /* Light blue border */
+  display: inline-block; /* Make each skill a box */
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04); /* Subtle shadow */
+}
+
+/* Style for navigation buttons in the header */
+.nav-btn {
+  display: inline-block;
+  background-color: #1976d2; /* Blue background for buttons */
+  color: #fff; /* Keep white text for contrast on blue buttons */
+  padding: 8px 18px; /* Padding inside the button */
+  margin: 8px 6px; /* Space between buttons */
+  border: none; /* No border */
+  border-radius: 20px; /* Rounded edges */
+  text-decoration: none; /* Remove underline */
+  font-size: 1em;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: #1565c0; /* Slightly darker blue on hover */
+}
+
+/* Dark blue stripes for top and bottom contrast */
+.stripe-top, .stripe-bottom {
+  width: 100%;
+  height: 24px; /* Height of the stripe */
+  background-color: #1565c0; /* Dark blue color */
 }
