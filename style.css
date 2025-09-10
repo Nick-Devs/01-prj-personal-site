@@ -1,1 +1,47 @@
 /* Add you CSS here */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and font for the body */
+body {
+  background-color: #f4f4f4; /* Light gray background */
+  font-family: Arial, sans-serif; /* Use a simple sans-serif font */
+}
+
+/* Style for the header */
+header {
+  text-align: center; /* Center the text in the header */
+  padding: 20px; /* Add some padding around the header */
+  background-color: #333; /* Dark background for the header */
+  color: white; /* White text color */
+}
+
+/* Style for the portrait image */
+header img {
+  border-radius: 50%; /* Make the image circular */
+  width: 150px; /* Set a fixed width for the image */
+  height: 150px; /* Set a fixed height for the image */
+}
+
+/* Style for sections */
+section {
+  margin: 20px; /* Add margin around each section */
+  padding: 15px; /* Add padding inside each section */
+  background-color: white; /* White background for sections */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* Style for section headings */
+h2 {
+  color: #333; /* Dark text color for headings */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Style for paragraphs */
+p {
+  line-height: 1.6; /* Increase line height for readability */
+  color: #666; /* Gray text color for paragraphs */
+}
